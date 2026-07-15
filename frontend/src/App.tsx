@@ -11,23 +11,9 @@ import DashboardPage from './pages/DashboardPage'
 import SubmitApplicationPage from './pages/SubmitApplicationPage'
 import ApplicationStatusPage from './pages/ApplicationStatusPage'
 
-// Task 18 pages — underwriter flow (stubs until task 18 is implemented)
-function WorklistPageStub() {
-  return (
-    <div className="p-8 text-gray-700">
-      <h1 className="text-2xl font-semibold text-purple-700">Underwriter Worklist</h1>
-      <p className="mt-2 text-sm">Implementation coming in task 18.</p>
-    </div>
-  )
-}
-function ReviewPageStub() {
-  return (
-    <div className="p-8 text-gray-700">
-      <h1 className="text-2xl font-semibold text-purple-700">Application Review</h1>
-      <p className="mt-2 text-sm">Implementation coming in task 18.</p>
-    </div>
-  )
-}
+// Task 18 pages — underwriter flow
+import WorklistPage from './pages/WorklistPage'
+import ReviewPage from './pages/ReviewPage'
 
 // ---------------------------------------------------------------------------
 // NavigateBridge — wires react-router navigate into AuthContext (Req 11.2)
@@ -80,8 +66,8 @@ function AppRoutes() {
 
           {/* Underwriter / Admin routes (task 18 stubs) */}
           <Route element={<ProtectedRoute allowedRoles={['ROLE_UNDERWRITER', 'ROLE_ADMIN']} />}>
-            <Route path="/underwriter/worklist" element={<WorklistPageStub />} />
-            <Route path="/underwriter/review/:id" element={<ReviewPageStub />} />
+            <Route path="/underwriter/worklist" element={<WorklistPage />} />
+            <Route path="/underwriter/review/:id" element={<ReviewPage />} />
           </Route>
         </Route>
 
