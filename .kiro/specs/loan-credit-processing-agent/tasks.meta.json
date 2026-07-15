@@ -1,0 +1,208 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Add missing Maven dependencies to `pom.xml`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125007337
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125189118
+      }
+    ],
+    "1.2 Create Flyway baseline migration — `V1__baseline_users.sql`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125194730
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125366750
+      }
+    ],
+    "1.3 Create Flyway migration for core domain tables — `V2__create_core_tables.sql`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125195431
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125367643
+      }
+    ],
+    "1.4 Create Flyway migration for scoring and decision tables — `V3__create_scoring_tables.sql`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125196453
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125368402
+      }
+    ],
+    "1.5 Create Flyway migration for audit log — `V4__create_audit_events.sql`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125197533
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125369330
+      }
+    ],
+    "1.6 Create Flyway migration for default policy threshold — `V5__seed_default_policy_threshold.sql`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125198255
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125370021
+      }
+    ],
+    "1. Project foundation — dependencies, migrations, and shared infrastructure": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125370110
+      }
+    ],
+    "2.1 Define shared enums and extend the `User` entity": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125376870
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125545455
+      }
+    ],
+    "2.2 Create `Application` JPA entity": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125551349
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125701301
+      }
+    ],
+    "2.3 Create `Document` JPA entity": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125551919
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125702065
+      }
+    ],
+    "2.4 Create `PolicyThreshold`, `CreditScore`, `Recommendation`, `FairnessResult`, `UnderwriterDecision`, and `DocumentExtractionPayload` JPA entities": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125552999
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125703037
+      }
+    ],
+    "2.5 Create Spring Data JPA repositories": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125708676
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125948414
+      }
+    ],
+    "4.3 Create custom exception classes": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125709594
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784126095029
+      }
+    ],
+    "4.4 Configure `OpenApiConfig` and Swagger UI": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125710276
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784126095658
+      }
+    ],
+    "3.1 Implement `JwtConfig` startup secret validation": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125711104
+      },
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784126093889
+      }
+    ],
+    "2. Backend core — entities, enums, and repositories": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784125948477
+      }
+    ],
+    "3.3 Implement `JwtTokenProvider` and `JwtAuthenticationFilter`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784126103425
+      }
+    ],
+    "4.1 Create all request and response DTOs": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784126103980
+      }
+    ],
+    "4.2 Implement `GlobalExceptionHandler`": [
+      {
+        "executionId": "0cd980b0-fa91-4beb-8564-ec159ee89802",
+        "chatSessionId": "sess_b3055f0c-1c0d-43a4-98bc-fbae918930be",
+        "timestamp": 1784126104854
+      }
+    ]
+  }
+}

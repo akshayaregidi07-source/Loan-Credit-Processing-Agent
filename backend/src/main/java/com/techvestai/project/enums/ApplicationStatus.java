@@ -1,0 +1,13 @@
+package com.techvestai.project.enums;
+
+public enum ApplicationStatus {
+    SUBMITTED,
+    DOCUMENT_INCOMPLETE,
+    DOCUMENT_INVALID,
+    DOCUMENT_INCONSISTENT,
+    DOCUMENTS_VERIFIED,
+    PROCESSING,
+    SCORING_ERROR,
+    AWAITING_UNDERWRITER_REVIEW,
+    DECISION_RECORDED
+}
