@@ -24,7 +24,7 @@
 Secure authentication interface for authorized credit officers and administrators.
 
 <p align="center">
-  <img src="assets/screenshots/screenshot1.png" width="900">
+  <img src="screenshots/screenshot1.png" width="900">
 </p>
 
 ---
@@ -44,7 +44,7 @@ Features include:
 - Audit Compliance
 
 <p align="center">
-  <img src="assets/screenshots/screenshot2.png" width="900">
+  <img src="screenshots/screenshot2.png" width="900">
 </p>
 
 ---
@@ -54,7 +54,7 @@ Features include:
 Interactive analytics showing approval trends, processing time, application distribution, and operational insights.
 
 <p align="center">
-  <img src="assets/screenshots/screenshot3.png" width="900">
+  <img src="screenshots/screenshot3.png" width="900">
 </p>
 
 ---
@@ -72,7 +72,7 @@ Features:
 - Applicant Information
 
 <p align="center">
-  <img src="assets/screenshots/screenshot4.png" width="900">
+  <img src="screenshots/screenshot4.png" width="900">
 </p>
 
 ---
@@ -90,7 +90,7 @@ Checks include:
 - Document Completeness
 
 <p align="center">
-  <img src="assets/screenshots/screenshot5.png" width="900">
+  <img src="screenshots/screenshot5.png" width="900">
 </p>
 
 ---
@@ -108,7 +108,7 @@ Scoring Factors:
 - Risk Assessment
 
 <p align="center">
-  <img src="assets/screenshots/screenshot6.png" width="900">
+  <img src="screenshots/screenshot6.png" width="900">
 </p>
 
 ---
@@ -125,7 +125,7 @@ Features:
 - Fair Lending Validation
 
 <p align="center">
-  <img src="assets/screenshots/screenshot7.png" width="900">
+  <img src="screenshots/screenshot7.png" width="900">
 </p>
 
 ---
@@ -146,7 +146,7 @@ Also provides:
 - Policy Observations
 
 <p align="center">
-  <img src="assets/screenshots/screenshot8.png" width="900">
+  <img src="screenshots/screenshot8.png" width="900">
 </p>
 
 ---
@@ -163,7 +163,7 @@ Capabilities:
 - Final Approval
 
 <p align="center">
-  <img src="assets/screenshots/screenshot9.png" width="900">
+  <img src="screenshots/screenshot9.png" width="900">
 </p>
 
 ---
@@ -181,7 +181,7 @@ Logs include:
 - Timestamps
 
 <p align="center">
-  <img src="assets/screenshots/screenshot10.png" width="900">
+  <img src="screenshots/screenshot10.png" width="900">
 </p>
 
 ---
@@ -199,7 +199,7 @@ Available Reports:
 - Processing Time Analysis
 
 <p align="center">
-  <img src="assets/screenshots/screenshot11.png" width="900">
+  <img src="screenshots/screenshot11.png" width="900">
 </p>
 
 ---
@@ -209,5 +209,5 @@ Available Reports:
 Provides high-level operational metrics and performance trends for management and stakeholders.
 
 <p align="center">
-  <img src="assets/screenshots/screenshot12.png" width="900">
+  <img src="screenshots/screenshot12.png" width="900">
 </p>
