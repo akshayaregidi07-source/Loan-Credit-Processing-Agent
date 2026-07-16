@@ -71,6 +71,7 @@ C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\proje
 C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\repository\UserRepository.java
 C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\agent\AuditAgent.java
 C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\enums\EmploymentStatus.java
+C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\config\PasswordEncoderConfig.java
 C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\config\OpenApiConfig.java
 C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\repository\RecommendationRepository.java
 C:\THE AKKI FILES\TechVest AI\PROJECT\backend\src\main\java\com\techvestai\project\dto\response\ApplicationReviewResponse.java

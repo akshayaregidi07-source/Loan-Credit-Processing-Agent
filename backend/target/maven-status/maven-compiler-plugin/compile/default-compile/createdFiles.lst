@@ -71,6 +71,7 @@ com\techvestai\project\enums\PolicyThresholdStatus.class
 com\techvestai\project\agent\FairnessAgent.class
 com\techvestai\project\exception\UnauthorisedResourceException.class
 com\techvestai\project\config\OpenApiConfig.class
+com\techvestai\project\config\PasswordEncoderConfig.class
 com\techvestai\project\repository\UnderwriterDecisionRepository.class
 com\techvestai\project\dto\response\FairnessResultResponse.class
 com\techvestai\project\enums\DocumentType.class

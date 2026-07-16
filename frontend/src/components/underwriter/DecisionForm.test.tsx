@@ -9,7 +9,7 @@
  * Requirements: 11.8
  */
 import { describe, it, expect, vi, afterEach } from 'vitest'
-import { render, screen, fireEvent, cleanup, within } from '@testing-library/react'
+import { render, fireEvent, cleanup, within } from '@testing-library/react'
 import * as fc from 'fast-check'
 import DecisionForm from './DecisionForm'
 

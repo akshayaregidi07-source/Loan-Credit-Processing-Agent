@@ -1,0 +1,5 @@
+com\techvestai\project\integration\AgentPipelineIntegrationTest.class
+com\techvestai\project\integration\AuditTrailIntegrationTest.class
+com\techvestai\project\integration\AbstractIntegrationTest.class
+com\techvestai\project\integration\DocumentUploadIntegrationTest.class
+com\techvestai\project\integration\JwtAuthFlowIntegrationTest.class
