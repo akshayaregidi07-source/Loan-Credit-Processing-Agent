@@ -63,11 +63,14 @@ export function ApiProvider({ children }: { readonly children: ReactNode }) {
       },
     )
 
-    // Response interceptor — catch 401 and trigger logout (Req 11.2)
+    // Response interceptor — catch 401 and trigger logout, but not on the
+    // login endpoint itself (a 401 there is just wrong credentials).
     resInterceptorId.current = api.interceptors.response.use(
       (response: AxiosResponse) => response,
       (error: AxiosError) => {
-        if (error.response?.status === 401) {
+        const url = error.config?.url ?? ''
+        const isLoginEndpoint = url.includes('/auth/login')
+        if (error.response?.status === 401 && !isLoginEndpoint) {
           logout()
         }
         return Promise.reject(error)

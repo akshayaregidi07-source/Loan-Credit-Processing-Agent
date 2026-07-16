@@ -1,4 +1,4 @@
-import { type FormEvent, useState } from 'react'
+import { type FormEvent, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useApi } from '../contexts/ApiContext'
@@ -9,14 +9,18 @@ import ErrorMessage from '../components/common/ErrorMessage'
 /**
  * Login page — Task 17.1.
  *
- * Submits credentials, stores the JWT in AuthContext (in-memory only),
- * and redirects to the role-appropriate dashboard.
- * Fully keyboard-navigable with ARIA labels and sufficient colour contrast.
+ * Flow:
+ * 1. User submits credentials.
+ * 2. authService.login() POSTs to /api/v1/auth/login.
+ * 3. On success, token + role are stored in AuthContext (in-memory only).
+ * 4. A useEffect watches isAuthenticated — once it flips to true it navigates
+ *    to the role-appropriate dashboard. This avoids the race condition where
+ *    navigate() fires before React flushes the setState() from AuthContext.login().
  *
  * Requirements: 11.1, 11.9, 11.10
  */
 export default function LoginPage() {
-  const { login: storeToken } = useAuth()
+  const { login: storeToken, isAuthenticated, role } = useAuth()
   const api = useApi()
   const navigate = useNavigate()
 
@@ -25,19 +29,25 @@ export default function LoginPage() {
   const [error, setError] = useState<number | string | null>(null)
   const [submitting, setSubmitting] = useState(false)
 
+  // Redirect as soon as auth state is confirmed — avoids navigate-before-setState race.
+  useEffect(() => {
+    if (!isAuthenticated) return
+    if (role === 'ROLE_APPLICANT') {
+      navigate('/applicant/dashboard', { replace: true })
+    } else {
+      // ROLE_UNDERWRITER and ROLE_ADMIN both go to the underwriter worklist
+      navigate('/underwriter/worklist', { replace: true })
+    }
+  }, [isAuthenticated, role, navigate])
+
   async function handleSubmit(e: FormEvent) {
     e.preventDefault()
     setError(null)
     setSubmitting(true)
     try {
       const response = await login(api, { username, password })
+      // Store token — the useEffect above will navigate once state updates.
       storeToken(response.token, response.role)
-      // Redirect based on role
-      if (response.role === 'ROLE_APPLICANT') {
-        navigate('/applicant/dashboard', { replace: true })
-      } else {
-        navigate('/underwriter/worklist', { replace: true })
-      }
     } catch (err) {
       const axiosErr = err as AxiosError
       setError(axiosErr.response?.status ?? 'Login failed. Please try again.')

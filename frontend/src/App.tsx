@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Navigate, Route, Routes, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Navigate, Outlet, Route, Routes, useNavigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { ApiProvider } from './contexts/ApiContext'
 import ProtectedRoute from './components/common/ProtectedRoute'
@@ -37,7 +37,7 @@ function AuthenticatedLayout() {
     <>
       <Navbar />
       <main id="main-content">
-        <ProtectedRoute allowedRoles={['ROLE_APPLICANT', 'ROLE_UNDERWRITER', 'ROLE_ADMIN']} />
+        <Outlet />
       </main>
     </>
   )
